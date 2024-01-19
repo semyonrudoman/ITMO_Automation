@@ -1,12 +1,12 @@
-def major(n1, n2):
+def major(n1, n2): # Задача №1
     if n1 > n2:
         print(n1)
     else:
         print(n2)
 
-major(2, 2)
+major(6, 2)
 
-def dif(d1, d2):
+def dif(d1, d2): # Задача №2
     if (abs(d1 - d2) == 135):
         print('yes')
     else:
@@ -14,7 +14,7 @@ def dif(d1, d2):
 
 dif(1, 136)
 
-def year(m):
+def year(m): # Задача №3
     if m in range(3, 6):
         print('Весна')
     elif m in range(6, 9):
@@ -28,7 +28,7 @@ def year(m):
 
 year(11)
 
-def ten(a1, a2, a3):
+def ten(a1, a2, a3): # Задача №4
     if a1 > 10 and a2 > 10 and a3 > 10:
         print('yes')
     else:
@@ -37,7 +37,7 @@ def ten(a1, a2, a3):
 ten(11, 12, 1)
 
 
-def summa(sm_list: list):
+def summa(sm_list: list): # Задача №5
     if len(sm_list) == 5:
         sm = 0
         for i in sm_list:
@@ -49,7 +49,7 @@ def summa(sm_list: list):
 
 summa((12, -34, 12, -1, 23))
 
-def day(yr: int, mn: int) -> int:
+def day(yr: int, mn: int) -> int: # Задача №6
     return yr * 12 * 29 + mn * 29
 
 print(day(25, 1))
